@@ -1,0 +1,24 @@
+ALGORITHM lire_une _phrase
+VAR
+    nbr_voyelle,nbr_caractere,ndr_de_mots; INTERGER:=0;
+
+    i,j,k:INTERGER;
+BEGIN
+    READ(nbr_caractere);
+    READ(nbr_voyelle);
+    REAd(nbr_de_mots);
+    FOR i FROM TO nbr_de_mots STEP step DO
+    nbr_de_mots([i]==',')
+    nbr_de_mots=nbr_de_mots+1;
+END_FOR
+write(nbr_de_mots)
+FOR j FROM TO nbr_voyelle+1;
+nbr_voyelle([j]=='a,o,u,i,e,y')
+nbr_voyelle=nbr_voyelle+1;
+END_FOR
+write(nbr_voyelle)
+FOR k FROM TO nbr_caractere STEP step DO
+nbr_caractere([k]==' ')
+nbr_caractere=nbr_caractere+1;
+END_FOR
+write(nbr_caractere)
